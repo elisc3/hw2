@@ -1,0 +1,26 @@
+#contenuto_sala {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contenuto_sala img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+#desc_sala {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

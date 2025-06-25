@@ -1,0 +1,99 @@
+#intestazione3 {
+  color: white;
+  /* background-image: url(img/mirador12.jpg); */
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  position: relative;  
+      
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    
+  text-align: center;
+}
+    
+#intestazione3 h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+    
+#intestazione3 p {
+  font-size: 1rem;
+}
+
+
+@media(max-width: 500px){
+  #intestazione3{
+    height: 560px;
+  }
+
+  #intestazione3 h1{
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+}
+
+#sale {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+#sale a {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+#sale img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.nome_sala {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  pointer-events: none;
+}
+
+#sale a:hover .nome_sala {
+  opacity: 0;
+}
+
+#sale a:hover img {
+  transform: scale(1.05);
+}
+
+@media(max-width: 500px){
+  #sale{
+    flex-direction: column;
+  }
+}
